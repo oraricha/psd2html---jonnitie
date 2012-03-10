@@ -1,0 +1,117 @@
+@import url("reset.css");
+
+body {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;/*"Lucida Grande",*/
+	background: #DDD url(../img/bg.jpg) repeat;
+	color: #9a9fa3;
+	font-weight: normal;
+	font-size: 12px;
+}
+.wrapper {
+	width:780px;
+	margin: 0 auto;
+	position: relative;
+}
+/*
+************************
+* =general
+************************
+*/
+
+a {
+	text-decoration: none;
+	color: #9a9fa3;
+}
+h1 {
+	font-size: 30px;
+	color: #FFF;
+	text-transform: lowercase;
+	margin: 27px 0px;
+	font-weight: bold;
+}
+header {
+	/*height: 168px;
+	width: 1340px;*/
+	/*background: url(../img/header_bg.png) no-repeat center;*/
+	/*font-family: Arial, Myriad Pro;*/
+	font-weight: bold;
+	font-size: 48px;
+	color: #fff;
+	/*letter-spacing:-50px;*/
+	margin: 74px 0 88px 0;
+}
+aside {
+	width: 143px;
+	height: 43px;
+	float: right;
+	background: url(../img/subscribe.png) no-repeat;
+	top: 3px;
+	right: 0px;
+	position: absolute;
+	text-indent:-9999px;
+}
+/*
+************************
+* =nav bar
+************************
+*/
+nav ul {
+	/*clear: both;*/
+}
+nav ul li {
+	display: inline;
+	margin: 0 20px 50px 0;
+	padding: 12px 5px;
+	position: relative;
+
+}
+.current .arrow-down ,nav ul li:hover .arrow-down {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 5px solid rgba(28,37,46,1);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	bottom: -5px;
+	left: 42%;
+/*	display: block;*/
+}
+.current, nav ul li:hover {
+	background-color: rgba(28,37,46,1);
+	border-radius: 3px;
+}
+nav a {
+	display: inline;
+	color: rgba(255,255,255,.5);
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+nav a:hover, .current{
+	color: #fff !important;
+}
+/*
+************************
+* =main area
+************************
+*/
+.main {
+	margin: 50px 0px 0px 0px;
+	clear: both;
+}
+#latestWork ul li {
+
+}
+.main ul li {
+	display: inline-block;
+}
+.main ul li {
+	list-style: none;
+	width: 180px;
+	margin: 0 20px 0 0;
+	margin-right: -4px;
+}
+.main ul li:last-child {
+	margin-right: 0px;
+}
